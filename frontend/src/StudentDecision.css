@@ -1,0 +1,283 @@
+.student-page {
+  min-height: 100vh;
+  background: #f4f6fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 28px 16px;
+  font-family: inherit;
+  color: #172033;
+}
+
+.student-card {
+  width: 100%;
+  max-width: 510px;
+  background: #ffffff;
+  border: 1px solid #e9edf4;
+  border-radius: 22px;
+  padding: 30px;
+  box-shadow: 0 12px 40px rgba(20, 35, 65, 0.07);
+}
+
+.student-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 19px;
+  font-weight: 750;
+  color: #172033;
+}
+
+.student-logo {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  background: #eaf1ff;
+  color: #3569d4;
+  border-radius: 13px;
+}
+
+.student-heading {
+  margin-top: 32px;
+}
+
+.student-eyebrow {
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 1.3px;
+  color: #4774d2;
+}
+
+.student-heading h1 {
+  font-size: 27px;
+  margin: 9px 0;
+  letter-spacing: -0.8px;
+}
+
+.student-heading p {
+  color: #718096;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.student-order-info {
+  margin-top: 25px;
+  padding: 18px;
+  background: #f8faff;
+  border: 1px solid #edf1f8;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 19px 12px;
+}
+
+.student-order-info div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.student-order-info span {
+  color: #8490a3;
+  font-size: 12px;
+}
+
+.student-order-info strong {
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.ready-status {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #15945b;
+}
+
+.decision-heading {
+  margin: 28px 0 14px;
+}
+
+.decision-heading h2 {
+  font-size: 16px;
+  margin: 0 0 5px;
+}
+
+.decision-heading span {
+  font-size: 12px;
+  color: #8490a3;
+}
+
+.decision-options {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.decision-option {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  text-align: left;
+  padding: 15px;
+  border: 1px solid #e5eaf2;
+  background: #fff;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: #172033;
+}
+
+.decision-option:hover:not(:disabled) {
+  border-color: #8aa9ee;
+  background: #f9fbff;
+}
+
+.decision-option.selected {
+  border-color: #4774d2;
+  background: #f2f6ff;
+}
+
+.decision-option:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.decision-icon {
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #f0f3f9;
+  color: #536985;
+}
+
+.selected .decision-icon {
+  background: #e0eaff;
+  color: #3569d4;
+}
+
+.decision-copy {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.decision-copy strong {
+  font-size: 14px;
+}
+
+.decision-copy span {
+  font-size: 12px;
+  color: #7b8799;
+  line-height: 1.5;
+}
+
+.decision-check {
+  color: #3569d4;
+  display: flex;
+  align-items: center;
+}
+
+.student-message {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-top: 17px;
+}
+
+.success-message {
+  background: #ecfdf4;
+  color: #13834e;
+}
+
+.error-message {
+  background: #fff1f1;
+  color: #c43b3b;
+}
+
+.submitting-message {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.student-footer {
+  text-align: center;
+  color: #a0a9b8;
+  font-size: 11px;
+  margin: 26px 0 0;
+}
+
+.student-state {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: #f4f6fb;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.state-card {
+  text-align: center;
+  margin: auto;
+}
+
+.state-card h2 {
+  font-size: 20px;
+  margin: 15px 0 8px;
+}
+
+.state-card p {
+  color: #c43b3b;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.state-card span {
+  color: #8490a3;
+  font-size: 12px;
+}
+
+.spin {
+  animation: student-spin 1s linear infinite;
+}
+
+@keyframes student-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 480px) {
+  .student-page {
+    padding: 15px 12px;
+    align-items: flex-start;
+  }
+
+  .student-card {
+    padding: 22px 18px;
+    border-radius: 18px;
+  }
+
+  .student-heading h1 {
+    font-size: 24px;
+  }
+}
